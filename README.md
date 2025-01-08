@@ -1,11 +1,11 @@
-## 🚀 Vidhya Vision
+# 🚀 Vidhya Vision
 
 The smart search tool has been deployed on Hugging Face. You can access and explore it through the following link:
 
-[**Explore the App on Hugging Face**](YOUR_DEPLOYED_APP_LINK)
+[**Explore the App on Hugging Face**](https://huggingface.co/spaces/yogeshjadhav666/Vidhya_Vision)
 
 ---
-# Analytics Vidhya Free Courses Search Tool
+## Analytics Vidhya Free Courses Search Tool
 
 ## Overview
 This project provides a smart search feature for free courses on Analytics Vidhya’s platform. It leverages Natural Language Processing (NLP) techniques using **LangChain**, **FAISS**, and **Streamlit** to create an intuitive, efficient search experience.
