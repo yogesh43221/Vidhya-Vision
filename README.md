@@ -1,95 +1,129 @@
-# Vidhya-Vision
-A smart search tool for Analytics Vidhya Courses.
+## 🚀 Vidhya Vision
+
+The smart search tool has been deployed on Hugging Face. You can access and explore it through the following link:
+
+[**Explore the App on Hugging Face**](YOUR_DEPLOYED_APP_LINK)
 
 ---
+# Analytics Vidhya Free Courses Search Tool
 
-## Analytics Vidhya Free Courses Search Tool
+## Overview
+This project provides a smart search feature for free courses on Analytics Vidhya’s platform. It leverages Natural Language Processing (NLP) techniques using **LangChain**, **FAISS**, and **Streamlit** to create an intuitive, efficient search experience.
 
-Welcome to the **Analytics Vidhya Free Courses Search Tool**! This project provides a smart search feature for free courses on Analytics Vidhya’s platform. It leverages Natural Language Processing (NLP) techniques using **LangChain**, **FAISS**, and **Streamlit** to create an intuitive, efficient search experience.
+The tool is powered by a **Retrieval-Augmented Generation (RAG)** framework, which combines a retrieval mechanism with generative responses for accurate and contextualized search results.
 
----
+## Tech Stack
+- **LangChain**: For building and managing NLP pipelines.
+- **FAISS**: A vector database used to store and search embeddings.
+- **Streamlit**: Web framework for building the interactive search tool.
+- **Python**: For scripting and data processing.
+- **NumPy**: For array manipulation, especially embeddings.
 
-## 🛠️ Project Structure
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FAISS](https://img.shields.io/badge/FAISS-0062FF?style=for-the-badge&logo=faiss&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-2566E0?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 
-```plaintext
-your_project/
-├── app/
-│   └── app.py                  # Streamlit app containing all the app code        
-│   └── script.py
-│   └── visualizations.py       # Streamlit app second page code            
-├── data/
-│   └── courses_data_final.csv           # Scraped course data in CSV format
-├── scripts/
-│   ├── scrape_courses.py       # Script to scrape course data
-│   ├── generate_embeddings.py  # Script to generate embeddings
-├── vector_store/
-│   ├── course_index.index      # FAISS index file for course embeddings
-│   └── course_embeddings.npy   # Numpy file storing embedding vectors
-├── venv/                       # Virtual environment (excluded in .gitignore)
-└── requirements.txt            # List of dependencies
+## Project Workflow
 
+### Step 1: Data Scraping (Python)
+- Scraped free course data from Analytics Vidhya.
+- Collected data including course titles, descriptions, ratings, reviews, and other attributes.
 
+### Step 2: Embedding Generation (Python)
+- Generated sentence embeddings for each course using an embedding model.
+- Saved the embeddings to a `.npy` file for efficient search.
 
-🌟 Features
-🚀 RAG-Based Search
-Combines retrieval mechanisms with generative responses for highly accurate and contextualized results.
-Uses embeddings to enhance search precision by understanding semantic similarities between user queries and course data.
-💡 Other Highlights
-Comprehensive Course Search: Users can search free courses by title, description, curriculum, and more.
-Efficient Embedding Search: Built on FAISS for fast and scalable semantic search.
-User-Friendly Frontend: A web-based Streamlit app provides an intuitive search interface.
-Dynamic Course Data: Scrapes and processes real-time course information.
-🚀 Getting Started
-Prerequisites
-Python 3.8+
-Virtual Environment (recommended)
+### Step 3: Search Functionality (LangChain & FAISS)
+- Built a retrieval mechanism using **FAISS** to index and search course embeddings.
+- Integrated with **LangChain** to handle user queries and generate relevant course suggestions based on semantic similarity.
 
-Installation
-1. Clone the repository:
+### Step 4: User Interface (Streamlit)
+- Developed a simple, interactive Streamlit web app to enable users to search courses.
+- Users can enter queries, and the app will return the most relevant courses based on their search.
+
+## Screenshots and Demo
+### Streamlit App Preview
+![Streamlit App Preview](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/blob/main/streamlit_app_screenshot.png)
+
+### Course Search Results
+![Search Results](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/blob/main/search_results_screenshot.png)
+
+## Key Features
+- **RAG-Based Search**: Combines retrieval with generative models to deliver highly relevant course suggestions.
+- **Efficient Embedding Search**: Uses **FAISS** for fast and scalable search.
+- **User-Friendly UI**: A clean, interactive **Streamlit** app allows users to explore courses easily.
+- **Dynamic Course Data**: Real-time scraping ensures up-to-date course information.
+
+## Getting Started
+
+### Prerequisites
+Ensure the following Python libraries are installed:
+- `python`
+- `langchain`
+- `faiss-cpu`
+- `streamlit`
+- `numpy`
+
+```bash
+pip install langchain faiss-cpu streamlit numpy
+
+```
+## Installation
+
+### Clone the repository:
+```bash
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 cd YOUR_REPO_NAME
-2. Create and activate a virtual environment:
+```
+## Create and activate a virtual environment:
 # On Windows
+```bash
 python -m venv venv
 .\venv\Scripts\activate
-
+```
 # On macOS/Linux
+```bash
 python3 -m venv venv
 source venv/bin/activate
-3. Install dependencies:
+```
+## Install dependencies:
+```bash
 pip install -r requirements.txt
-
-🧑‍💻 Usage
-Run the Streamlit app:
+```
+## 🧑‍💻 Usage
+### Run the Streamlit app:
+```bash
 streamlit run app/app2.py
-Access the app in your browser at http://localhost:8501.
-
+```
+Access the app in your browser at ```http://localhost:8501```
 Explore and search courses using the RAG-based smart search feature!
 
-📂 Data Source
-The project utilizes data scraped from the Analytics Vidhya platform.
+## 📂 Data Source
+The project utilizes data scraped from the **Analytics Vidhya** platform.
 Scraped attributes include:
+- Course Title
+- Description
+- Curriculum
+- Level (Beginner, Intermediate, Advanced)
+- Rating, Reviews, Duration, Lesson Count
+- Instructor Name, Price, and Enrollment Info
 
-Course Title
-Description
-Curriculum
-Level (Beginner, Intermediate, Advanced)
-Rating, Reviews, Duration, Lesson Count
-Instructor Name, Price, and Enrollment Info
-🛠️ Technical Details
-RAG Framework: Combines retrieval using FAISS with a generative layer powered by an embedding model.
-Embedding Model: Uses a state-of-the-art sentence embedding model to represent course data in vector format.
-Vector Database: FAISS is employed for efficient similarity search.
-Frontend: Built with Streamlit for an interactive user experience.
-🙌 Contribution
+## 🛠️ Technical Details
+- **RAG Framework**: Combines retrieval using FAISS with a generative layer powered by an embedding model.
+- **Embedding Model**: Uses a state-of-the-art sentence embedding model to represent course data in vector format.
+- **Vector Database**: FAISS is employed for efficient similarity search.
+- **Frontend**: Built with Streamlit for an interactive user experience.
+- 
+## 🙌 Contribution
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
-📄 License
-This project is licensed under the MIT License.
+## 📄 License
+This project deployment is licensed under the MIT License.
 
-📧 Contact
+## 📧 Contact
 For any questions or issues, please reach out to Yogesh Jadhav.
 
-🔍 Explore, Learn, and Grow! 🚀
+## 🔍 Explore, Learn, and Grow! 🚀
 
-This markdown code can be directly pasted into your `README.md` file in the GitHub repository. Let me know if you need further adjustments!
+
