@@ -46,10 +46,13 @@ The tool is powered by a **Retrieval-Augmented Generation (RAG)** framework, whi
 
 ## Screenshots and Demo
 ### Streamlit App Preview
-![Streamlit App Preview](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/blob/main/streamlit_app_screenshot.png)
+![Streamlit App Preview](https://github.com/yogesh43221/Vidhya-Vision/blob/167c1ccccb4d8fd076f28983b659610bd4a34973/App_pics/image1.png)
+![Streamlit App Preview](https://github.com/yogesh43221/Vidhya-Vision/blob/167c1ccccb4d8fd076f28983b659610bd4a34973/App_pics/image2.png)
+![Streamlit App Preview](https://github.com/yogesh43221/Vidhya-Vision/blob/167c1ccccb4d8fd076f28983b659610bd4a34973/App_pics/image3.png)
+![Streamlit App Preview](https://github.com/yogesh43221/Vidhya-Vision/blob/167c1ccccb4d8fd076f28983b659610bd4a34973/App_pics/image4.png)
 
 ### Course Search Results
-![Search Results](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/blob/main/search_results_screenshot.png)
+![Search Results](https://github.com/yogesh43221/Vidhya-Vision/blob/167c1ccccb4d8fd076f28983b659610bd4a34973/App_pics/image5.png)
 
 ## Key Features
 - **RAG-Based Search**: Combines retrieval with generative models to deliver highly relevant course suggestions.
