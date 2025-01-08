@@ -1,6 +1,6 @@
 # 🚀 Vidhya Vision
 <p align="center">
-  <img src="image_url" alt="Vidhya Vision Image" />
+  <img src="https://github.com/yogesh43221/Vidhya-Vision/blob/58d02254989a0f45ce1a1b690a2f955bdf5334b5/App_pics/imagevv.png" alt="Vidhya Vision Image" />
 </p>
 The smart search tool has been deployed on Hugging Face. You can access and explore it through the following link:
 
