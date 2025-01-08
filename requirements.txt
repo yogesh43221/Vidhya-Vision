@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+pandas
+streamlit
+langchain
+faiss-cpu
+sentence-transformers
+psutil
+matplotlib
