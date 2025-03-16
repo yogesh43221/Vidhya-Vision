@@ -78,7 +78,7 @@ pip install langchain faiss-cpu streamlit numpy
 
 ### Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/yogesh43221/Vidhya-Vision.git)
 cd YOUR_REPO_NAME
 ```
 ## Create and activate a virtual environment:
